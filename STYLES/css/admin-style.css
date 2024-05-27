@@ -1,0 +1,551 @@
+/*css for the general body (admin body)*/
+.adminbody{
+	position: relative;
+	padding-top: 50px;
+	width: 100%;
+	padding-left: 12px;
+	min-height: 100%;
+	padding-bottom: 50px;
+}
+/*css for the header menu*/
+
+.admin-menu-button{
+	line-height: 35px;
+	background-color: rgb(3, 3, 59);
+	position:fixed;
+	z-index: 2;
+	width: 100%;
+	top: 0;
+	display: block;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/*Styling for the admin side menu*/
+
+
+/* in class(.) Menu overall Styling of overal links We give the links to the pages i.e <a href="> a dark color*/
+
+.menu-overal a {
+	color:rgb(8, 6, 1);
+	display: block;
+	line-height: 20px;
+    padding: 15px;
+    text-decoration: none!important
+    
+}
+/*Styles For The List Section*/
+.menu-overal>li>a{
+    background-color: teal;
+	text-transform: capitalize;
+	color:whitesmoke;
+    font-size: 1.2em;
+    
+
+}
+.menu-overal>li>a:hover{
+    background-color: #28262c;
+    color: violet;
+}
+
+
+/* In the class of menu overal if list is after the first list in the lists container
+ give it a border top e.g <ul>
+ <li></li>
+ the from 2nd list
+ </li> </li></ul> onwards
+*/
+.menu-overal>li+li {
+	border-top: 1px solid #555;
+}
+
+/*STYLES FOR THE LABEL IN THE MENU*/
+/*In the class menu overal css for the class = label*/
+
+.menu-overal .label {
+	background: #888;
+	border-radius: 3px;
+	line-height: 20px;
+	padding: 0 5px
+}
+/*   in the class menu-overal the class label has several items with different color below is the styling for the colors */
+/* e.g  b class = "label green" */
+.menu-overal .label.green {
+	background: #78ba00
+}
+.menu-overal .label.orange {
+	background: orangered
+}
+.menu-overal .label.red {
+	background: rgb(226, 8, 8)
+}
+
+
+/*STYLING FOR THE ICONS USED*/
+
+.menu-overal>li>a .menu-icon { 
+	color :rgb(11, 15, 3);
+	padding-right: 5px;
+}
+
+.menu-overal>li>a:hover .menu-icon { 
+	color :red;
+}
+
+/* css for the icon fa-chevron up and fa-chevron down*/
+
+.menu-overal>li>a.collapsed .fa-chevron-circle-up {
+	display: none
+}
+.menu-overal>li>a.collapsed .fa-chevron-circle-down {
+	display: block
+}
+
+.menu-overal>li>a .fa-chevron-circle-up {
+	display: block;
+}
+.menu-overal>li>a .fa-chevron-circle-down{
+	display: none;
+	color: wheat;
+}
+
+/*End css for the side menu attributes*/
+
+
+/*css for the submit button in the loginpages*/
+.loginpage .btn{
+	width: 100%;
+}
+/*css for the labelinfo in labels in forms*/
+
+label.labelinfo{
+
+	color: rgb(8, 8, 8);
+	font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+	text-transform: uppercase;
+}
+
+/*css for the logo image display it in the middle*/
+img.mylogo{
+    display: block;
+    margin: auto;
+    background: inherit;
+}
+/* Start of css for the notification sector used*/
+
+
+/*css for the notification page*/
+.notifications-body .stage{
+	background-color: transparent;
+	overflow-y: auto;
+	height: 600px;	
+}
+/*css for notificationcontent holder*/
+.notification-content{
+	padding: 2px;
+	color: black;
+	display:flex;
+	flex-direction: column;
+	font-size: large;
+	border-radius:5px;
+	margin-bottom:15px;
+	width:100%;	
+ 	line-height: 30px;
+    background-color:rgb(248, 238, 238);
+}
+
+/*css for the arrow-right in notification page*/
+.arrow{
+	padding-right: 3px;	
+	color: rgba(0, 0, 0, 0.481);
+	font-size: 12px;
+}
+
+/*from second notification*/
+.notification-content>.notification-Text+.notification-Text{
+	border-top: 1px solid rgb(102, 100, 100);
+}
+
+.notif{
+	white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+/*css for the read message*/
+.notification_read{
+	background-color: rgb(255, 255, 255);
+	text-decoration: none !important;
+}
+/*css for the unread message*/
+
+.notification_unread{
+	font-weight: bold;
+	text-decoration: none !important;
+	background-color: rgb(241, 241, 252);
+}
+/*css for the date and time in span*/
+.notification-Text span{
+	font-weight: lighter;
+	font-size: smaller;
+}
+
+/*css for the holder of Today, previously and yesterday words*/
+.dateTitle{
+	font-size: small bolder;
+	color:#0B0C10;
+	background-color: rgb(253, 251, 251);
+}
+
+/*css for the notification message*/
+.notification-Text{
+	padding: 7px;
+	text-decoration: none;
+	color: black;
+	border-radius: 2px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+      
+		
+}
+/*on hovering*/
+.notification-Text:hover{
+	background-color: ivory;
+	text-decoration: none !important;
+	color: black;
+	border-radius: 5px;
+}
+
+
+/*css for the notification holder in pages*/	
+
+.notification{
+	color: #f8f9fa;
+	border-radius: 50%;
+	background-color: rgb(9, 10, 9);
+	top: 10%;
+	position: fixed;
+	width: 80px;
+	height: 80px;
+	float: right;
+	padding: 1px 15px;
+	padding-top: -5px;
+	right: 10px;
+    cursor: pointer;
+	text-align: center;
+	display: none;
+	
+}
+  
+.notification:hover{
+	background-color: #17a2b8;
+
+}
+/*cdd for the number holder*/
+  
+.number{
+
+	position: absolute;
+	padding: 5px 10px;
+	border-radius: 50%;
+	top: -10px;
+	right: -10px;
+	background-color: #dc3545;
+	color: rgb(246, 247, 252);
+
+	
+}
+
+/*css for the number holder if it is empty*/
+.number:empty{
+	display: none;
+}
+/*css for the icon -bell*/
+
+.notification-icon{
+
+	font-size: 50px;
+}
+.notification-icon:hover{
+
+color: #0c0c0c;
+}
+
+
+.header-text{
+	color: white;
+    text-decoration: none;
+}
+.header-text:hover{
+color:white;
+}
+
+/*css for the i class fa fa-eye in forms in the password field*/
+.mypass i{
+	position: relative;
+	float:right!important;
+	margin-top:-28px;
+	z-index:2;
+	color:rgb(22, 12, 12);
+	padding:3px;
+}
+/*css for the submitbuttons*/
+.submit-button{
+	width: 100%;
+	border-radius: 10px;
+}
+/*on the login-page no need to display the open btn for the side menu*/
+.loginpage .openbtn{
+	display: none !important;
+		
+}
+/*css for the sidebar*/
+.sidebar{
+	background-color: whitesmoke;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/*css for the stage in general*/
+.stage{	
+	border-color: #e9e9e9;
+	margin-bottom: 20px;
+    background-color: rgb(238, 226, 226);
+    border-radius: 14px !important;
+	width: 100%;
+	margin: auto;
+    height: auto;
+}
+/* Css for the stage head*/
+.stage-head {
+	
+	color: whitesmoke;
+	background-color: rgb(8, 8, 8);
+	border-color: #e9e9e9;
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;	
+}
+
+	/*css for the stage head h3 in stage*/
+
+.stage-head h3 {
+	font-size: 20px;
+	color: yellow ;
+	line-height: 20px;
+	height: 20px;
+	margin: 0;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	text-transform: uppercase	
+}
+
+/*css for the stagebody part*/
+.stage-body {
+	margin: auto;
+	width: 90%;
+    padding: 5px 0; 
+}
+
+/*css for the pages that have tables that manage students, hostels, and rooms*/
+.managements .stage-body{
+	overflow-x: auto !important;
+	font-size: 1rem;
+	white-space: nowrap;
+	overflow:hidden;
+	
+}
+/*css for the footer*/
+.adminfooter{
+
+    color: whitesmoke;
+	background-color:  rgb(3, 3, 59);
+    margin-top: 15%;
+    margin-bottom: 0!important;
+    text-align: center;
+	z-index: 2;
+	font-size: small;
+	text-transform: capitalize;
+	max-height: 100px;
+	position: fixed;
+	height: auto;
+	overflow: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	
+}
+
+
+/*Media screen css to accomodate different screen sizes*/
+/*when the screensize is more than 950px*/
+@media screen and (min-width: 950.1px) {
+	/*Do not display the icons for thesidemenu*/
+	.openbtn,.closebtn{
+		display: none;
+	}
+	/*let the main content be 80%*/
+	.col-md-8{
+		width: 80% !important;
+	}
+	/*body of the login page be 70%*/
+	.loginpage .stage{
+		width: 70% !important;	
+	}
+
+	/*remove the padding and let the width be 100% to cover the menu holder*/
+	.mymenubar{
+		padding-top: 0;
+		width: 100%;
+	}
+	/*the sidemenu will be 25%*/
+	.thesidemenu{
+		width: 25%;
+	}
+}
+
+/*When the screen is between 575.1px and 950px*/
+
+@media screen and (min-width: 575.1px) and (max-width: 950px) {
+	/*open btn and closebtn for the side menu must not be displayed*/
+	.openbtn,.closebtn{
+		display: none !important;
+	}
+	/*let the width of the loginpage content be 70%*/
+	.loginpage .stage{
+		width: 70% !important;
+	}
+	/*css for the main content*/
+	.col-md-8{
+		width: 60% !important;
+  		float: right;
+		display: block;
+		margin-left: 8%;
+	}
+	/*reduce the fontsize and padding of the adminbody*/
+	.adminbody {
+		font-size: small;
+		padding-left: 0px!important;
+	}
+	/*let the width of the side menu cover the  longest content*/
+	.thesidemenu{
+		width: max-content!important;
+	}
+	/*let the menu bars cover the maximum content*/
+	.mymenubar{
+		width: max-content!important;
+	}
+}
+
+/*when the screen has a maximum width of 575px*/
+
+@media screen and (max-width: 575px) {
+	/*let the whole body cover a width of 100% with a smaller font*/
+	.adminbody{
+		font-size: smaller!important;
+		width: 100%;	
+	}
+	/*in the stage-head let the text be centered*/
+	.stage-head{
+
+		text-align: center;
+	}
+	/*let the header3 fit the content as required by adjustng its height automatically accordingly*/
+	.stage-head h3 {
+		font-size: medium;	
+		line-height: auto ;
+		height: fit-content;
+		
+	}/*css for the sidebar if its displayed*/
+	.sidebar {
+		height: 100%; /* 100% Full-height */
+		width:0; /* 0 width - change this with JavaScript */
+		position: fixed; /* Stay in place */
+		z-index: 2; /* Stay on top */
+		top: 50px ;
+		left: 0;
+		background-color:whitesmoke; 
+		overflow-x: hidden;
+		padding: 20px 0;
+		transition: 0.5s; 
+		font-size: small;
+	  }
+	/*css for the menubar let it have a minimum height of 506px to ensure all content is displayed with a smaller font*/
+	  .mymenubar{
+	    min-height: 506px;
+		padding-left: 5px;
+		font-size: small;
+		font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	  }
+	  
+	
+	  /* Position and style the close button (top right corner) */
+	  .sidebar .closebtn {
+		position: absolute;
+		top: 0;
+		width: 10%;
+		bottom: auto;
+		right: 20px;
+		font-size: 30px;
+		margin-left: 5;
+		margin-top: 0;
+		color: black;
+	
+	  }
+	 
+	  /* The button used to open the sidebar */
+	  .openbtn {
+	
+		cursor: pointer;
+		background-color: rgb(15, 15, 15) !important;
+		color: white;
+		padding: 50px;
+		height: 100%;
+		border: none;
+		float: left !important;
+		margin: 4px;
+		border-radius: 6px !important;
+		text-align: center;
+		
+	  }
+	  
+	  .openbtn:hover {
+		background-color: rgb(36, 35, 35);
+		
+	  }
+  
+}
+/*when the screen is below 293px*/
+@media screen and (max-width: 293px) {
+		.menu-overal>li{
+			width: 100%;
+			white-space: nowrap;			
+		}
+		.sidebar {
+			width:0; /* 0 width - change this with JavaScript */
+		  }
+		/* reduce the font sizes*/
+		.menu-overal{
+			font-size: small!important;
+		}
+		.header-text{
+			font-size: xx-small!important;					
+		}
+		.stage{		
+			font-size: xx-small;			
+		}
+		/*let the width of the buttons be 100%*/
+		.btn{
+			width: 100%;
+		}
+}
+
+/*when the screen is less thatn 260px remove the icons*/
+@media screen and (max-width: 260px) {
+	.menu-overal>li>a .menu-icon { 
+		display: none;
+	}	
+}

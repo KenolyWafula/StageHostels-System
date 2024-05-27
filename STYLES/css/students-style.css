@@ -1,0 +1,177 @@
+/*css for the image holder page e in room details*/
+.image-description-holder{
+  font-size: larger;
+  margin: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border: 0;
+ 
+}
+/*for the cancel booking buttons in booked-room details*/
+.cancelpaybtn{
+  text-decoration: none!important;
+  color:white;
+  font-size: larger;
+  width: 50%
+}
+.cancelpaybtn .btn{
+  width: fit-content;
+
+}
+.room-title{
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.price{
+  font-size: larger;
+  color: rgb(138, 14, 14);
+  font-weight: bolder;
+}
+/*container for the room image*/
+.room-images{
+  margin-right: 10px;
+  position: relative;
+  width: 98%;
+  height: 100%;
+  min-height: 350px;
+ 
+}
+.room-images img{
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+/*css for the room name*/
+.room{
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  font-weight: bolder;
+}
+
+.description-container{
+ position: relative;
+  width: 100%;
+  background-color: #eee;
+  padding: 10px;
+}
+/*css for the stagebody in homepage page*/
+.student-body{
+  font-size: small;
+  margin: 1px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 33.3%);
+  background-color: white;
+  min-height: fit-content!important;
+}
+
+.room-container{
+  position: relative;
+  width: 90%;
+  margin: 10px;
+  padding: 5px;
+  padding-top: 10px;
+  border: 0.2px solid black;
+  border-radius:5px;
+  margin-bottom:15px;
+  text-decoration: none!important;
+  font-size: medium;
+  min-height: auto;
+  white-space: nowrap;
+  overflow: auto;
+  text-overflow:ellipsis;
+}
+.room-container img{
+  width:100%;
+  height:65%;
+  display: block;
+  border-radius: 10px;
+}
+
+
+.room-container>a{
+  text-decoration:none!important;
+  color:black;
+}
+.room-container>a:hover{
+  text-decoration:none!important;
+  color:black;
+}
+.room-price{
+  position: relative;
+  float: right;
+  font-weight: bold;
+  font-size: large;
+  color: rgba(252, 0, 0, 0.816);
+  bottom: 0;
+}
+.image{
+  position: relative;
+  width: 100%;
+  height: 30%;
+  border-radius: 50%;
+}
+
+/*css for the different media screens to achieve responsiveness*/
+@media screen and (max-width:821px) {
+  .student-body{
+    font-size: smaller;
+    margin: 0.5pX;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 48.3%);
+  }
+  .room-container{
+    min-height: max-content!important;
+  }
+  
+
+}
+
+@media screen and (max-width:411px) {
+  .student-body{
+    font-size: large;
+    margin: 0.5ps;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 90.3%);
+  }
+
+
+}
+@media screen and (max-width:937px) {
+  .cancelpaybtn{
+    font-size: medium;
+  }
+
+}
+
+@media screen and (max-width:878px) {
+  .image-description-holder{
+    font-size: medium;
+  }
+
+  
+}
+@media screen and (max-width:815px) {
+  .cancelpaybtn .btn {
+    width: 100%;
+    margin: 2px;
+  }
+}
+@media screen and (max-width:723px) {
+  .image-description-holder{
+    font-size: larger;
+    margin: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    border: 0;
+   
+  }
+}
